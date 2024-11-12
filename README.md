@@ -77,13 +77,19 @@ for idx, student in enumerate(data_list, start=1):
 ### Input
 Misalnya, pengguna memasukkan data seperti berikut:
 ```plaintext
-Nama : Ari
+Nama : zaki 1
 NIM : 1234
 Nilai Tugas : 70
 Nilai UTS : 65
 Nilai UAS : 80
 Tambah data(y/t)? y
-Nama : Bambang
+Nama : zaki 2
+NIM : 2345
+Nilai Tugas : 65
+Nilai UTS : 80
+Nilai UAS : 90
+Tambah data(y/t)? y
+Nama : zaki 3
 NIM : 2345
 Nilai Tugas : 65
 Nilai UTS : 80
@@ -94,11 +100,11 @@ Tambah data(y/t)? t
 ### Output
 Program akan menampilkan data dalam format tabel seperti berikut:
 ```plaintext
-| No |    Nama    |  NIM  | Tugas | UTS | UAS |  Akhir  |
+| No |     Nama     |  NIM  | Tugas | UTS | UAS |  Akhir  |
 =======================================================
-| 1  | zaki       | 1234  | 70    | 65  | 80  |  71.75  |
-| 2  | udin       | 2345  | 65    | 80  | 90  |  79.00  |
-| 3  | santoso    | 2345  | 65    | 80  | 90  |  79.00  |
+| 1  | zaki 1       | 1234  | 70    | 65  | 80  |  71.75  |
+| 2  | zaki 2       | 2345  | 65    | 80  | 90  |  79.00  |
+| 3  | zaki 3       | 2345  | 65    | 80  | 90  |  79.00  |
 ```
 
 ## Flowchart
@@ -119,14 +125,3 @@ Flowchart untuk program ini dapat diuraikan sebagai berikut:
 3. Pilih `y` untuk menambah data mahasiswa baru atau `t` untuk menampilkan semua data.
 4. Data akan ditampilkan dalam format tabel di terminal.
 
-## Cara Menyimpan dan Mengunggah Kode ke GitHub
-1. Buat repository baru di GitHub.
-2. Clone repository ke komputer Anda.
-3. Simpan file program dan `README.md` di folder repository lokal.
-4. Jalankan perintah berikut di terminal untuk mengunggah kode ke GitHub:
-
-   ```bash
-   git add .
-   git commit -m "Menambahkan program pengelolaan data mahasiswa"
-   git push origin main
-   ```
