@@ -115,15 +115,6 @@ Program akan menampilkan data dalam format tabel seperti berikut:
 ![Screenshot 2024-11-17 151445](https://github.com/user-attachments/assets/355e2868-1a92-4b55-93f8-5e180a1a7d8f)
 
 ## Flowchart
-Flowchart untuk program ini dapat diuraikan sebagai berikut:
 
-1. **Mulai**: Program dimulai.
-2. **Inisialisasi List**: Buat list `data_list` untuk menyimpan data mahasiswa.
-3. **Loop Input Data**: Lakukan loop untuk menerima input data (nama, NIM, tugas, UTS, UAS).
-4. **Hitung Nilai Akhir**: Menghitung nilai akhir berdasarkan nilai tugas, UTS, dan UAS dengan bobot yang telah ditentukan.
-5. **Simpan Data**: Simpan data dalam dictionary dan tambahkan ke `data_list`.
-6. **Tambah Data?**: Tanyakan apakah ingin menambah data lagi. Jika jawabannya `y`, kembali ke langkah 3. Jika `t`, lanjut ke langkah 7.
-7. **Tampilkan Tabel Data**: Tampilkan semua data mahasiswa yang tersimpan dalam format tabel.
-8. **Selesai**: Program berakhir.
-
+![Screenshot 2024-11-17 155706](https://github.com/user-attachments/assets/1b4525cd-afcd-4b63-a3c5-f42c76921f43)
 
