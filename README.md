@@ -33,44 +33,43 @@ Loop utama program meminta pengguna untuk memasukkan data mahasiswa. Setelah dat
 data_list = []
 
 while True:
-    # Input data mahasiswa
-    nama = input("Nama : ")
-    nim = input("NIM : ")
-    tugas = float(input("Nilai Tugas : "))
-    uts = float(input("Nilai UTS : "))
-    uas = float(input("Nilai UAS : "))
-    
-    # Perhitungan nilai akhir
-    final_grade = calculate_final_grade(tugas, uts, uas)
-    
-    # Simpan data mahasiswa
-    student_data = {
-        "Nama": nama,
-        "NIM": nim,
-        "Tugas": tugas,
-        "UTS": uts,
-        "UAS": uas,
-        "Nilai Akhir": final_grade
-    }
-    data_list.append(student_data)
+    NAMA = input('NAMA : ')
+    NIM = input('NIM : ')
+    TUGAS = input('TUGAS : ')
+    UTS = input('TUGAS : ')
+    UAS = input('TUGAS : ')
 
-    # Pilihan untuk menambahkan data lagi
-    more_data = input("Tambah data(y/t)? ")
-    if more_data.lower() != 'y':
+    final_grade = calculate_final_grade(TUGAS * 0.30) + (UTS * 0.35) + (UAS * 0.30)
+
+    mahasiswa_data ={
+    'NAMA': NAMA,
+    'NIM' : NIM,
+    'TUGAS' :TUGAS,
+    'UTS' :UTS,
+    'UAS' :UAS,
+   }
+
+    data_list.append(mahasiswa_data)
+
+    p_data = input('mau nambah data yang lain gak? (ya/tidak)')
+    if p_data.lower() != 'ya':
         break
 ```
-
 ### 4. Menampilkan Data Mahasiswa dalam Format Tabel
 Setelah loop berhenti, program menampilkan semua data mahasiswa yang sudah dimasukkan dalam format tabel yang rapi.
 
 ```python
-print("\n| No |    Nama    |  NIM  | Tugas | UTS | UAS |  Akhir  |")
+print('\n| NO | NAMA | NIM | TUGAS | UTS | UAS | AKHIR |')
 print("=" * 55)
 for idx, student in enumerate(data_list, start=1):
-    print(f"| {idx:<2} | {student['Nama']:<10} | {student['NIM']:<5} | "
-          f"{student['Tugas']:<5} | {student['UTS']:<3} | {student['UAS']:<3} | "
-          f"{student['Nilai Akhir']:<7.2f} |")
+    print(f"| {idx:<2} | {student['Nama']:<10} | {student['NIM']:<10} | "
+          f"{student['Tugas']:<10} | {student['UTS']:<10} | {student['UAS']:<10} | "
+          f"{student['Nilai Akhir']:<10.2f} |")
+
 ```
+## FULL kodingannya
+
+![Screenshot 2024-11-17 151500](https://github.com/user-attachments/assets/d7168227-2f3f-42fd-8f54-16ac4b010d39)
 
 ## Contoh Penggunaan Program
 
@@ -100,12 +99,15 @@ Tambah data(y/t)? t
 ### Output
 Program akan menampilkan data dalam format tabel seperti berikut:
 ```plaintext
-| No |     Nama     |  NIM  | Tugas | UTS | UAS |  Akhir  |
+| No |     Nama     |  NIM  | Tugas |  UTS  |  UAS  |  Akhir  |
 =======================================================
-| 1  | zaki 1       | 1234  | 70    | 65  | 80  |  71.75  |
-| 2  | zaki 2       | 2345  | 65    | 80  | 90  |  79.00  |
-| 3  | zaki 3       | 2345  | 65    | 80  | 90  |  79.00  |
+| 1  | zaki 1       | 1234  | 70.00 | 65.00 | 80.00 |  71.75  |
+| 2  | zaki 2       | 2345  | 65.00 | 80.00 | 90.00 |  79.00  |
+| 3  | zaki 3       | 3456  | 80.00 | 40.00 | 40.00 |  52.00  |
 ```
+## HASIL SCREENSHOUT VSC
+
+![Screenshot 2024-11-17 151445](https://github.com/user-attachments/assets/355e2868-1a92-4b55-93f8-5e180a1a7d8f)
 
 ## Flowchart
 Flowchart untuk program ini dapat diuraikan sebagai berikut:
