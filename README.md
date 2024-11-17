@@ -126,9 +126,4 @@ Flowchart untuk program ini dapat diuraikan sebagai berikut:
 7. **Tampilkan Tabel Data**: Tampilkan semua data mahasiswa yang tersimpan dalam format tabel.
 8. **Selesai**: Program berakhir.
 
-## Langkah-Langkah Menggunakan Program
-1. Jalankan program di terminal atau IDE.
-2. Masukkan data setiap mahasiswa sesuai dengan prompt yang diberikan.
-3. Pilih `y` untuk menambah data mahasiswa baru atau `t` untuk menampilkan semua data.
-4. Data akan ditampilkan dalam format tabel di terminal.
 
