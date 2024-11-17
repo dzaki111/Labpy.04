@@ -1,3 +1,4 @@
+# LAB 04.PY
 
 # Tugas Praktikum - Program Pengelolaan Data Mahasiswa
 
@@ -22,7 +23,7 @@ Program menyimpan data setiap mahasiswa dalam list `data_list`. Setiap data maha
 Fungsi ini digunakan untuk menghitung nilai akhir mahasiswa berdasarkan bobot nilai tugas, UTS, dan UAS. Fungsi menerima parameter nilai tugas, UTS, dan UAS, lalu mengembalikan hasil perhitungan nilai akhir.
 
 ```python
-def calculate_final_grade(tugas, uts, uas):
+def oi_final_grade(tugas, uts, uas):
     return (tugas * 0.30) + (uts * 0.35) + (uas * 0.35)
 ```
 
@@ -39,7 +40,7 @@ while True:
     UTS = input('TUGAS : ')
     UAS = input('TUGAS : ')
 
-    final_grade = calculate_final_grade(TUGAS * 0.30) + (UTS * 0.35) + (UAS * 0.30)
+    final_grade = oi_final_grade(TUGAS * 0.30) + (UTS * 0.35) + (UAS * 0.30)
 
     mahasiswa_data ={
     'NAMA': NAMA,
