@@ -116,5 +116,6 @@ Program akan menampilkan data dalam format tabel seperti berikut:
 
 ## Flowchart
 
-![Screenshot 2024-11-17 155706](https://github.com/user-attachments/assets/1b4525cd-afcd-4b63-a3c5-f42c76921f43)
+<img width="223" alt="image" src="https://github.com/user-attachments/assets/034e5fbb-cece-4274-9f5d-d35352e104ad">
+
 
