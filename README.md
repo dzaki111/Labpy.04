@@ -86,19 +86,19 @@ NIM : 1234
 Nilai Tugas : 70
 Nilai UTS : 65
 Nilai UAS : 80
-Tambah data(y/t)? y
+Tambah data(y/t)? ya
 Nama : zaki 2
 NIM : 2345
 Nilai Tugas : 65
 Nilai UTS : 80
 Nilai UAS : 80
-Tambah data(y/t)? y
+Tambah data(y/t)? ya
 Nama : zaki 3
 NIM : 3456
 Nilai Tugas : 80
 Nilai UTS : 40
 Nilai UAS : 40
-Tambah data(y/t)? t
+Tambah data(y/t)? tidak
 ```
 
 ### Output
